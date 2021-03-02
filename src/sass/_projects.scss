@@ -1,0 +1,159 @@
+.pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      border-bottom: 8px solid $color2;
+      border-radius: 10px;
+      width: 40%;
+      top: 8%;
+      right: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 8px solid $color2;
+      border-radius: 10px;
+      width: 40%;
+      top: 8%;
+      left: 0;
+    }
+  }
+  &__h2 {
+  }
+  &__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__upperbox {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    &:last-child::before {
+      content: "";
+      border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+      width: 100%;
+      left: 0;
+      top: 50%;
+      @media only screen and (max-width: $medium) {
+        display: none;
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      border-left: 1px solid rgba(0, 0, 0, 0.123);
+      height: 100%;
+      @media only screen and (max-width: $medium) {
+        display: none;
+      }
+    }
+  }
+}
+
+.single {
+  position: relative;
+  overflow: hidden;
+  width: 60rem;
+  height: 60rem;
+  margin: 2rem;
+  @media only screen and (max-width: $extra-large) {
+    width: 50rem;
+    height: 50rem;
+  }
+  @media only screen and (max-width: $extra) {
+    width: 40rem;
+    height: 40rem;
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__h3 {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.233) 19%,
+      rgba(111, 111, 111, 1) 100%
+    );
+    color: $color1;
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-weight: 400;
+    @media only screen and (max-width: $extra-large) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $extra) {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  }
+}
+.multi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 2rem;
+  width: 60rem;
+  height: 60rem;
+  @media only screen and (max-width: $extra-large) {
+    width: 50rem;
+    height: 50rem;
+  }
+  @media only screen and (max-width: $extra) {
+    width: 40rem;
+    height: 40rem;
+  }
+  &__image {
+    height: 45%;
+    width: 100%;
+    object-fit: cover;
+    &:first-child {
+      margin-bottom: 6rem;
+    }
+  }
+  &__h3 {
+    text-align: center;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.233) 19%,
+      rgba(111, 111, 111, 1) 100%
+    );
+    color: $color1;
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-weight: 400;
+    @media only screen and (max-width: $extra-large) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $extra) {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  }
+}
