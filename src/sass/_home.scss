@@ -1,0 +1,10 @@
+.home {
+  position: relative;
+  &__logo {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    z-index: 10;
+    width: 20rem;
+  }
+}

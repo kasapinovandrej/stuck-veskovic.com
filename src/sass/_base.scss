@@ -1,0 +1,56 @@
+$color1: #fff;
+
+$extra-small: 21.9em;
+$small: 37.5em;
+$medium: 48em;
+$large: 62em;
+$extra: 75em;
+
+/* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {...};
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...};
+
+//////////////////////////////////////////////////
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $extra) {
+    font-size: 60%;
+  }
+  @media only screen and (max-width: $large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $medium) {
+    font-size: 45%;
+  }
+  @media only screen and (max-width: $small) {
+    font-size: 40%;
+  }
+  @media only screen and (max-width: $extra-small) {
+    font-size: 35%;
+  }
+}
+
+body {
+  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
+}
+
+h1 {
+  color: $color1;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  text-shadow: 0px 10px 9px rgb(105, 105, 105);
+}
+p {
+  color: $color1;
+  font-size: 2rem;
+}
