@@ -1,0 +1,24 @@
+.ser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 120rem;
+  }
+  &__card {
+    width: 25rem;
+    height: 25rem;
+    margin: 5rem;
+    background: chartreuse;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+  }
+}

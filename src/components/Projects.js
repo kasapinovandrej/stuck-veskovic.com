@@ -1,6 +1,6 @@
 import React from 'react';
-import MultiPictures from './Sections/Elements/MultiPictures';
-import SinglePicture from './Sections/Elements/SinglePicture';
+import MultiPictures from './Elements/MultiPictures';
+import SinglePicture from './Elements/SinglePicture';
 import Project1 from '../assets/img/Projects/Project-1.jpg';
 import Project2 from '../assets/img/Projects/Project-2.jpg';
 import Project3 from '../assets/img/Projects/Project-3.jpg';
@@ -11,8 +11,8 @@ import Project6 from '../assets/img/Projects/Project-6.jpg';
 const Projects = () => {
     return (
         <section className="pro">
-            <div className="pro__wrap">
-                <h2 className="pro__h2">izdvojeni projekti</h2>
+            <div className="wrap">
+                <h2>izdvojeni projekti</h2>
                 <div className="pro__box">
                     <div className="pro__upperbox">
                         <SinglePicture
