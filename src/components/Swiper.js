@@ -1,13 +1,22 @@
 import React from 'react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
+import { BsArrowRight, BsArrowLeft, BsArrowDown } from 'react-icons/bs'
 import 'swiper/swiper.scss';
 import DataSwiper from '../Data/dataSwiper';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const HeroSwiper = () => {
+
+    const scrollToSection = (e) => {
+        const sectionOne = document.querySelector('.pro').getBoundingClientRect()
+        window.scrollTo({
+            left: sectionOne.left + window.pageXOffset,
+            top: sectionOne.top + window.pageYOffset,
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <Swiper
@@ -38,6 +47,7 @@ const HeroSwiper = () => {
             }
             <div className="swiper-button-prev"><BsArrowLeft /></div>
             <div className="swiper-button-next"><BsArrowRight /></div>
+            <div className="btn-next-section" onClick={scrollToSection}><BsArrowDown /></div>
         </ Swiper >
     );
 };

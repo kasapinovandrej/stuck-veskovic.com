@@ -1,6 +1,6 @@
 import React from 'react';
 import Swiper from '../components/Swiper';
-import Projects from '../components/Sections/Projects';
+import Projects from '../components/Projects';
 import Logo from '../assets/img/logo/Logo-beli.png'
 
 const Home = () => {

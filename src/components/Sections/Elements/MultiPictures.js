@@ -4,10 +4,14 @@ const MultiPictures = (props) => {
     return (
         <div>
             <div className="multi">
-                <img className="multi__image" src={props.imgOne} alt={`${props.imgOne}`} />
-                <img className="multi__image" src={props.imgTwo} alt={`${props.imgTwo}`} />
-                <h3 className="multi__h3">{props.titleOne}</h3>
-                <h3 className="single__h3">{props.titleTwo}</h3>
+                <div className="multi__imgbox">
+                    <img className="img" src={props.imgOne} alt={`${props.imgOne}`} />
+                    <h3 className="image-title">{props.titleOne}</h3>
+                </div>
+                <div className="multi__imgbox">
+                    <img className="img" src={props.imgTwo} alt={`${props.imgTwo}`} />
+                    <h3 className="image-title">{props.titleTwo}</h3>
+                </div>
             </div >
         </div>
     )

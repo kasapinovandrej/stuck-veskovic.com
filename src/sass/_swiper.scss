@@ -21,6 +21,16 @@
 }
 
 ///SWIPER ARROWS
+.btn-next-section {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  font-size: 8rem;
+  font-weight: bold;
+  color: $color1;
+  z-index: 10;
+  cursor: pointer;
+}
 .swiper-button-next {
   position: absolute;
   right: 3%;
