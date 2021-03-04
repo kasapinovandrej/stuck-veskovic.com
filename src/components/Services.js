@@ -1,5 +1,6 @@
 import React from 'react';
 import DataServices from '../Data/dataServices';
+import { FiExternalLink } from 'react-icons/fi'
 
 const Services = () => {
     return (
@@ -13,6 +14,7 @@ const Services = () => {
                             <h3>{el.title}</h3>
                         </div>
                     ))}
+                <a href="#" className="ser__link">Pogledajte ostale usluge <FiExternalLink /></a>
                 </div>
             </div>
         </section>

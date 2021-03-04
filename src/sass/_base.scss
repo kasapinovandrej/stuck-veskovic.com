@@ -1,6 +1,7 @@
 $color1: #fff;
 $color2: #000;
 $color3: #ccc;
+$color4: #383e42;
 
 $extra-small: 21.9em;
 $small: 37.5em;
@@ -8,7 +9,7 @@ $medium: 48em;
 $large: 62em;
 $extra: 75em;
 $extra-large: 90em;
-// @media only screen and (max-width: 600px) {...};
+// @media only screen and (max-width: $large) {...};
 
 //////////////////////////////////////////////////
 * {
@@ -89,6 +90,20 @@ h3 {
   font-size: 3.5rem;
   text-transform: uppercase;
   width: 100%;
+}
+h4 {
+  color: $color1;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  &::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid $color1;
+    width: 7rem;
+    margin-top: 3rem;
+  }
 }
 p {
   color: $color1;

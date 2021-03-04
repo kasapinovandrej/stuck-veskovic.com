@@ -1,0 +1,46 @@
+.cli {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  &__swipbox {
+    max-width: 120rem;
+    position: relative;
+    @media only screen and (max-width: $large) {
+      width: 100%;
+    }
+  }
+  &__imgbox {
+    text-align: center;
+  }
+  &__img {
+    height: 15rem;
+    align-self: center;
+    @media only screen and (max-width: $large) {
+      height: 12rem;
+    }
+  }
+  &__next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    @media only screen and (max-width: $small) {
+      display: none;
+    }
+  }
+  &__prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    @media only screen and (max-width: $small) {
+      display: none;
+    }
+  }
+}

@@ -10,15 +10,33 @@
     max-width: 120rem;
   }
   &__card {
-    width: 25rem;
-    height: 25rem;
+    width: 30rem;
+    height: 30rem;
     margin: 5rem;
-    background: chartreuse;
+    text-align: center;
   }
   &__img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.26);
+    margin-bottom: 2rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__link {
+    display: inline-block;
+    width: 100%;
+    font-size: 3rem;
+    text-decoration: none;
+    color: $color2;
+    text-align: right;
+    transition: all 0.3s;
+    &:hover {
+      color: $color3;
+    }
   }
 }
