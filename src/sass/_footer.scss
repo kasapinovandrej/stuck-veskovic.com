@@ -15,9 +15,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: $medium) {
+      width: 25rem;
+      height: 30rem;
+    }
+    @media only screen and (max-width: $small) {
+      width: 30rem;
+      height: 25rem;
+    }
   }
   &__logo {
     width: 20rem;
+  }
+  &__textwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__textbox {
     display: flex;
@@ -30,8 +43,16 @@
     font-size: 1.5rem;
     color: $color1;
     margin: 0.5rem 0;
+    transition: all 0.3s;
+    &:hover {
+      color: $color3;
+    }
   }
   &__icon {
     font-size: 4rem;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(0.95);
+    }
   }
 }

@@ -5,17 +5,18 @@
   &__swipbox {
     max-width: 120rem;
     position: relative;
-    @media only screen and (max-width: $large) {
+    @media only screen and (max-width: $extra) {
       width: 100%;
     }
   }
   &__imgbox {
     text-align: center;
+    margin: 3rem 0;
   }
   &__img {
     height: 15rem;
     align-self: center;
-    @media only screen and (max-width: $large) {
+    @media only screen and (max-width: $extra) {
       height: 12rem;
     }
   }
@@ -26,10 +27,7 @@
     transform: translateY(-50%);
     font-size: 4rem;
     cursor: pointer;
-    z-index: 10;
-    @media only screen and (max-width: $small) {
-      display: none;
-    }
+    z-index: 5;
   }
   &__prev {
     position: absolute;
@@ -38,9 +36,6 @@
     transform: translateY(-50%);
     font-size: 4rem;
     cursor: pointer;
-    z-index: 10;
-    @media only screen and (max-width: $small) {
-      display: none;
-    }
+    z-index: 5;
   }
 }

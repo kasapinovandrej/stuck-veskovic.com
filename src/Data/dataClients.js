@@ -1,7 +1,7 @@
 import Client1 from '../assets/img/Clients/KNAUF-Logo.png';
-import Client2 from '../assets/img/Clients/pci-logo 4.png';
-import Client3 from '../assets/img/Clients/WEDI LOGO 2.png';
-import Client4 from '../assets/img/Clients/GROHN LOGO 3.png';
+// import Client2 from '../assets/img/Clients/pci-logo 4.png';
+// import Client3 from '../assets/img/Clients/WEDI LOGO 2.png';
+// import Client4 from '../assets/img/Clients/GROHN LOGO 3.png';
 
 
 const DataClients = [

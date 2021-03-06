@@ -8,6 +8,8 @@ import Project5 from '../assets/img/Projects/Project-5.jpg';
 import Project6 from '../assets/img/Projects/Project-6.jpg';
 
 
+
+
 const Projects = () => {
     return (
         <section className="pro">

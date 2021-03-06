@@ -13,12 +13,20 @@ const Clients = () => {
                 <h2>nasi partneri</h2>
                 <div className="cli__swipbox">
                     <Swiper
-                        spaceBetween={100}
-                        slidesPerView={3}
+                        spaceBetween={0}
+                        slidesPerView={1}
                         loop={true}
                         navigation={{
                             nextEl: '.cli__next',
                             prevEl: '.cli__prev'
+                        }}
+                        breakpoints={{
+                            350: {
+                                slidesPerView: 2
+                            },
+                            992: {
+                                slidesPerView: 3
+                            }
                         }}
                     //pagination={{ clickable: true }}
                     >

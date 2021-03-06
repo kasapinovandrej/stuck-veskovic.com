@@ -9,7 +9,7 @@ $medium: 48em;
 $large: 62em;
 $extra: 75em;
 $extra-large: 90em;
-// @media only screen and (max-width: $large) {...};
+// @media only screen and (max-width: $medium) {...};
 
 //////////////////////////////////////////////////
 * {
@@ -90,6 +90,10 @@ h3 {
   font-size: 3.5rem;
   text-transform: uppercase;
   width: 100%;
+  text-align: center;
+  @media only screen and (max-width: $medium) {
+    font-size: 2.5rem;
+  }
 }
 h4 {
   color: $color1;
