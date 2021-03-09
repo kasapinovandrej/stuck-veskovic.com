@@ -6,6 +6,7 @@ import Clients from '../components/Clients';
 import Logo from '../assets/img/logo/Logo-beli.png'
 
 const Home = () => {
+
     return (
         <div className="home">
             <img src={Logo} alt="Logo" className='home__logo' />

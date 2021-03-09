@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { BsArrowRight, BsArrowLeft, BsArrowDown } from 'react-icons/bs'
@@ -8,8 +8,8 @@ import DataSwiper from '../Data/dataSwiper';
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const HeroSwiper = () => {
-
-    const scrollToSection = (e) => {
+    const [showArrow, setShowArrow] = useState(true)
+    const scrollToSection = () => {
         const sectionOne = document.querySelector('.pro').getBoundingClientRect()
         window.scrollTo({
             left: sectionOne.left + window.pageXOffset,
@@ -17,7 +17,29 @@ const HeroSwiper = () => {
             behavior: 'smooth'
         })
     }
-
+    useEffect(() => {
+        const hero = document.querySelector('.swiper-container')
+        hero.addEventListener('mousemove', (e) => {
+            const mouseX = e.pageX
+            const windowWidth = window.innerWidth
+            if (mouseX < windowWidth * 0.3) {
+                setShowArrow(false)
+            } else if (mouseX > windowWidth * 0.7) {
+                setShowArrow(true)
+            }
+        })
+        return () => {
+            window.removeEventListener('mousemove', (e) => {
+                const mouseX = e.pageX
+                const windowWidth = window.innerWidth
+                if (mouseX < windowWidth / 0.3) {
+                    setShowArrow(false)
+                } else if (mouseX > windowWidth / 0.7) {
+                    setShowArrow(true)
+                }
+            })
+        }
+    }, [showArrow])
     return (
         <Swiper
             spaceBetween={0}
@@ -45,11 +67,11 @@ const HeroSwiper = () => {
                     </SwiperSlide>
                 ))
             }
-            <div className="swiper-button-prev"><BsArrowLeft /></div>
-            <div className="swiper-button-next"><BsArrowRight /></div>
+            <div className="swiper-button-prev" style={{ opacity: showArrow ? '0' : '1', transition: 'all .8s' }}><BsArrowLeft /></div>
+            <div className="swiper-button-next" style={{ opacity: showArrow ? '1' : '0', transition: 'all .8s' }}><BsArrowRight /></div>
             <div className="btn-next-section" onClick={scrollToSection}><BsArrowDown /></div>
         </ Swiper >
     );
 };
 
-export default HeroSwiper
+export default HeroSwiper;

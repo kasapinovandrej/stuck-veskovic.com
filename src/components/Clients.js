@@ -28,7 +28,6 @@ const Clients = () => {
                                 slidesPerView: 3
                             }
                         }}
-                    //pagination={{ clickable: true }}
                     >
                         {DataClients.map(el => (
                             <SwiperSlide key={el.id}>

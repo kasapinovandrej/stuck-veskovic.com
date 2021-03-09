@@ -46,6 +46,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: $extra) {
+      width: 60vw;
+    }
+    @media only screen and (max-width: $large) {
+      width: 70vw;
+    }
+    @media only screen and (max-width: $medium) {
+      width: 80vw;
+    }
+    @media only screen and (max-width: $small) {
+      width: 100vw;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      background: rgba(56, 62, 66, 0.89);
+    }
   }
   &__linkbox {
     width: 80%;
@@ -53,6 +67,11 @@
     margin-left: 15rem;
     transform: skewX(15deg);
     display: flex;
+    @media only screen and (max-width: $small) {
+      transform: skewX(0);
+      justify-content: center;
+      margin-left: 0;
+    }
   }
   &__listbox {
     margin-top: 10rem;
@@ -64,12 +83,22 @@
       bottom: 20%;
       left: 0;
       z-index: 20;
+      @media only screen and (max-width: $small) {
+        width: 100%;
+        bottom: 25%;
+      }
+    }
+    @media only screen and (max-width: $small) {
+      margin-top: 20rem;
     }
   }
   &__list {
     margin-top: 2rem;
     transform: skewX(-15deg);
     list-style: none;
+    @media only screen and (max-width: $small) {
+      transform: skewX(0);
+    }
   }
   &__link {
     color: $color1;

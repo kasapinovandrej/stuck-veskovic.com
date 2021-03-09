@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { IoMenuOutline } from 'react-icons/io5'
 import { CgBackspace } from 'react-icons/cg'
+
+
 
 
 const Navigation = () => {
@@ -11,10 +13,32 @@ const Navigation = () => {
     const closeNav = (e) => {
         setMenu(!menu)
     }
-
+    ////////////////menu color/////////////////////
+    const [windowHeight, setHeight] = useState('')
+    const [windowScroll, setScroll] = useState(0)
+    const [menuColor, setMenuColor] = useState('#fff')
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            setHeight(document.documentElement.clientHeight)
+            setScroll(window.scrollY)
+            setScroll(window.pageYOffset)
+        })
+        if ((windowHeight - windowHeight * 0.1) < windowScroll) {
+            setMenuColor('#383e42')
+        } else {
+            setMenuColor('#fff')
+        }
+        return () => {
+            window.removeEventListener('scroll', () => {
+                setHeight(window.innerHeight)
+                setScroll(window.scrollY)
+            })
+        }
+    }, [windowScroll])
+    ///////////////////////////////////////////////
     return (
         <>
-            <button className='burger' onClick={openNav}>{menu ? <IoMenuOutline className='burger__icon' /> : <CgBackspace className='burger__icon' />}
+            <button className='burger' onClick={openNav}>{menu ? <IoMenuOutline className='burger__icon' style={{ color: `${menuColor}` }} /> : <CgBackspace className='burger__icon' />}
             </button>
             {menu ? null :
                 <nav className="nav">
