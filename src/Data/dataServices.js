@@ -3,32 +3,32 @@ import SerImageOne from '../assets/img/Services/Usluga-4-FASADE.jpg';
 const DataServices = [
     {
         id: 1,
-        title: 'restauracija',
+        title: 'RESTAURATEN',
         image: SerImageOne
     },
     {
         id: 2,
-        title: 'fasade',
+        title: 'STUCK UND FASSADEN',
         image: SerImageOne
     },
     {
         id: 3,
-        title: 'keramika',
+        title: 'FLIESENARBEITEN',
         image: SerImageOne
     },
     {
         id: 4,
-        title: 'akusticni plafoni',
+        title: 'TEROCKENBAU UND AKUSTIKDECKEN',
         image: SerImageOne
     },
     {
         id: 5,
-        title: 'kupatila',
+        title: 'FLIESENARBEITEN',
         image: SerImageOne
     },
     {
         id: 6,
-        title: 'enterijeri',
+        title: 'INNENARUM DES HAUSES',
         image: SerImageOne
     },
 ]

@@ -55,4 +55,16 @@
       transform: scale(0.95);
     }
   }
+  &__rights {
+    text-align: center;
+    background: $color2;
+    color: $color4;
+    &--link {
+      text-decoration: none;
+      color: $color3;
+    }
+    &--span {
+      color: $color4;
+    }
+  }
 }

@@ -36,14 +36,12 @@
     }
   }
   &__link {
-    display: inline-block;
-    margin-right: 2rem;
-    width: 100%;
     font-size: 3rem;
     text-decoration: none;
     color: $color2;
-    text-align: right;
+    text-align: center;
     transition: all 0.3s;
+    margin-top: 10rem;
     &:hover {
       color: $color3;
     }

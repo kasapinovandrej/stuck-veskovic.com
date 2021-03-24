@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoMenuOutline } from 'react-icons/io5'
 import { CgBackspace } from 'react-icons/cg'
 
@@ -46,11 +46,10 @@ const Navigation = () => {
                     <div className='nav__wrap'>
                         <div className='nav__linkbox'>
                             <ul className='nav__listbox'>
-                                <li className='nav__list'><a href='#' className='nav__link'>usluge</a></li>
-                                <li className='nav__list'><a href='#' className='nav__link'>projekti</a></li>
-                                <li className='nav__list'><a href='#' className='nav__link'>cenovnik</a></li>
-                                <li className='nav__list'><a href='#' className='nav__link'>o nama</a></li>
-                                <li className='nav__list'><a href='#' className='nav__link'>kontakt</a></li>
+                                <li className='nav__list'><a href='#' className='nav__link'>LEISTUNGEN</a></li>
+                                <li className='nav__list'><a href='#' className='nav__link'>PROJEKTE</a></li>
+                                <li className='nav__list'><a href='#' className='nav__link'>ÜBER UNS</a></li>
+                                <li className='nav__list'><a href='#' className='nav__link'>KONTAKT</a></li>
                             </ul>
                         </div>
                     </div>

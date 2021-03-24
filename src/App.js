@@ -5,16 +5,12 @@ import Nav from './components/Navigation';
 
 function App() {
 
-  
-
-
   return (
     <div className="App">
       <Nav />
       <Home />
       <Footer />
     </div>
-
   );
 }
 

@@ -10,7 +10,7 @@ const Clients = () => {
     return (
         <section className="cli">
             <div className='wrap'>
-                <h2>nasi partneri</h2>
+                <h2>UNSERE PARTNER</h2>
                 <div className="cli__swipbox">
                     <Swiper
                         spaceBetween={0}

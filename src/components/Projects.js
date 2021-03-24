@@ -6,6 +6,7 @@ import Project2 from '../assets/img/Projects/Project-2.jpg';
 import Project3 from '../assets/img/Projects/Project-3.jpg';
 import Project5 from '../assets/img/Projects/Project-5.jpg';
 import Project6 from '../assets/img/Projects/Project-6.jpg';
+import Project7 from '../assets/img/Projects/Project-7.jpg';
 
 
 
@@ -14,7 +15,7 @@ const Projects = () => {
     return (
         <section className="pro">
             <div className="wrap">
-                <h2>izdvojeni projekti</h2>
+                <h2>VOR ALLEM PROJEKTE</h2>
                 <div className="pro__box">
                     <div className="pro__upperbox">
                         <SinglePicture
@@ -35,7 +36,7 @@ const Projects = () => {
                         />
                         <SinglePicture
                             title='LAKE HOUSE, FRANKFURT AM MAIN / 2018'
-                            img={Project1}
+                            img={Project7}
                         />
                     </div>
                 </div>
