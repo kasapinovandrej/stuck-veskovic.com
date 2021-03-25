@@ -58,13 +58,14 @@
   &__rights {
     text-align: center;
     background: $color2;
-    color: $color4;
+    color: $color5;
     &--link {
       text-decoration: none;
-      color: $color3;
-    }
-    &--span {
-      color: $color4;
+      color: $color1;
+      transition: all 0.2s;
+      &:hover {
+        color: $color4;
+      }
     }
   }
 }

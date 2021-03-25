@@ -1,5 +1,5 @@
 import React from 'react';
-import DataServices from '../Data/dataServices';
+import DataServices from '../../Data/dataServices';
 import { FiExternalLink } from 'react-icons/fi'
 
 const Services = () => {

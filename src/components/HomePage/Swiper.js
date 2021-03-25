@@ -3,7 +3,7 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { BsArrowRight, BsArrowLeft, BsArrowDown } from 'react-icons/bs'
 import 'swiper/swiper.scss';
-import DataSwiper from '../Data/dataSwiper';
+import DataSwiper from '../../Data/dataSwiper';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 

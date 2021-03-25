@@ -1,0 +1,59 @@
+.hero {
+  position: relative;
+  height: 60rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    &::before {
+      content: "";
+      position: absolute;
+      border-bottom: 8px solid $color1;
+      width: 140%;
+      right: 0;
+      bottom: -1rem;
+    }
+  }
+}
+
+.custom-shape-divider-bottom-1616684500 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1616684500 svg {
+  position: relative;
+  display: block;
+  width: calc(148% + 1.3px);
+  height: 262px;
+}
+
+.custom-shape-divider-bottom-1616684500 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1616684500 svg {
+    width: calc(148% + 1.3px);
+    height: 163px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1616684500 svg {
+    width: calc(148% + 1.3px);
+    height: 101px;
+  }
+}

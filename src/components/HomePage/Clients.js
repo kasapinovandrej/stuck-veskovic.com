@@ -1,7 +1,7 @@
 import React from 'react'
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import DataClients from '../Data/dataClients';
+import DataClients from '../../Data/dataClients';
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 
 SwiperCore.use([Navigation, Pagination]);
