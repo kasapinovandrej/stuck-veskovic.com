@@ -8,27 +8,27 @@ import SerImage6 from '../assets/img/Services/Veskovic-pergola.png';
 const DataServices = [
     {
         id: 1,
-        title: 'RESTAURATEN',
+        title: 'STUCK UND FASSADEN',
         image: SerImage1
     },
     {
         id: 2,
-        title: 'STUCK UND FASSADEN',
+        title: 'TEROCKENBAU UND AKUSTIKDECKEN',
         image: SerImage5
     },
     {
         id: 3,
-        title: 'FLIESENARBEITEN',
+        title: 'RESTAURATEN',
         image: SerImage4
     },
     {
         id: 4,
-        title: 'TEROCKENBAU UND AKUSTIKDECKEN',
+        title: 'FLIESENARBEITEN',
         image: SerImage2
     },
     {
         id: 5,
-        title: 'FLIESENARBEITEN',
+        title: 'VESKOVIC PERGOLA',
         image: SerImage6
     },
     {

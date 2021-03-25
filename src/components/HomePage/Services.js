@@ -1,6 +1,7 @@
 import React from 'react';
 import DataServices from '../../Data/dataServices';
 import { FiExternalLink } from 'react-icons/fi'
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     return (
@@ -14,7 +15,7 @@ const Services = () => {
                             <h3>{el.title}</h3>
                         </div>
                     ))}
-                    <a href="#" className="ser__link">Mehr leistungen sehen <FiExternalLink /></a>
+                    <Link to="/leistungen" className="ser__link">Mehr leistungen sehen <FiExternalLink /></Link>
                 </div>
             </div>
         </section>

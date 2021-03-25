@@ -50,24 +50,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    border-bottom: 8px solid $color2;
-    border-radius: 10px;
-    width: 39%;
-    top: 7rem;
-    right: 0;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    border-bottom: 8px solid $color2;
-    border-radius: 10px;
-    width: 39%;
-    top: 7rem;
-    left: 0;
-  }
 }
 
 h1 {
@@ -78,17 +60,38 @@ h1 {
   text-shadow: 0px 10px 9px rgb(105, 105, 105);
 }
 h2 {
+  position: relative;
+  text-align: center;
   color: $color2;
   font-size: 4rem;
   font-weight: 400;
   text-transform: uppercase;
   margin: 5rem 0;
-  //text-shadow: 0px 3px 9px rgb(105, 105, 105);
+  width: 100%;
+  &::before {
+    position: absolute;
+    content: "";
+    border-bottom: 8px solid $color2;
+    border-radius: 20px;
+    width: calc(50% - 20.5rem);
+    left: 0;
+    top: 50%;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    border-bottom: 8px solid $color2;
+    border-radius: 20px;
+    width: calc(50% - 20.5rem);
+    right: 0;
+    top: 50%;
+  }
 }
+
 h3 {
   color: $color2;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
@@ -109,6 +112,12 @@ h4 {
     width: 7rem;
     margin-top: 3rem;
   }
+}
+h5 {
+  width: 80%;
+  color: $color2;
+  text-align: justify;
+  font-size: 2rem;
 }
 p {
   color: $color1;
