@@ -1,7 +1,4 @@
 @mixin btn {
-  display: fixed;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   right: 5rem;
   top: 5rem;
@@ -18,9 +15,13 @@
 
 .burger-btn {
   @include btn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid $color2;
   border-radius: 50%;
   &__icon {
+    width: 100%;
     color: $color2;
     font-size: 4rem;
   }
@@ -114,6 +115,7 @@
     }
   }
   &__link {
+    position: relative;
     color: $color1;
     text-transform: uppercase;
     font-size: 3rem;

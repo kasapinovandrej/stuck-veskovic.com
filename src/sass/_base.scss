@@ -125,5 +125,12 @@ p {
 }
 
 .active {
-  background: red;
+  //background: red;
+  &::before {
+    position: absolute;
+    content: url("../assets/img/Navigation/mesure.png");
+    width: 100%;
+    bottom: -3.2rem;
+    left: 0;
+  }
 }

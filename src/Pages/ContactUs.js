@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Image from '../assets/img/Hero/Fliesenarbeiten.jpg';
+import Image from '../assets/img/Hero/hero-contact.jpg';
 
 const ContactUs = () => {
     return (
