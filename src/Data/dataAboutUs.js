@@ -1,4 +1,4 @@
-import ImageAsmir from '../assets/img/AboutUs/asmir.png';
+import ImageAsmir from '../assets/img/AboutUs/asmir.jpg';
 import ImageWorker from '../assets/img/AboutUs/worker.jpg';
 
 const dataAboutUs = {

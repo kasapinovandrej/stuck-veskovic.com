@@ -1,4 +1,5 @@
 import React from 'react'
+import Owner from './Owner';
 
 const TextBox = (props) => {
     return (
@@ -16,6 +17,7 @@ const TextBox = (props) => {
                     </div>
                 </div>
             </div>
+            <Owner data={props} />
         </div>
     )
 }
