@@ -12,6 +12,7 @@
   }
   &__text {
     width: 75%;
+    margin-top: 10rem;
   }
   &__p {
     color: $color2;
@@ -49,4 +50,13 @@
     font-style: italic;
     font-weight: 400;
   }
+  &__map-wrap {
+    width: 100rem;
+  }
+}
+
+.leaflet-container {
+  width: 60%;
+  height: 50rem;
+  margin: 3rem 0;
 }

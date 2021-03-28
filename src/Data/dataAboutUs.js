@@ -12,7 +12,9 @@ const dataAboutUs = {
     text5: 'Wir freuen uns auf Sie!',
     owner: 'Asmir Vesković',
     title: 'Gründer',
-    address: 'Eichmühle 1, 36251 BAD HERSFELD'
+    address: 'Eichmühle 1, 36251 BAD HERSFELD',
+    longitude: 50.841970031518485,
+    latitude: 9.679960020906403
 }
 
 export default dataAboutUs

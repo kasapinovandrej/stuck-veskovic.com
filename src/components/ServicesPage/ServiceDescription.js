@@ -6,7 +6,7 @@ const ServiceDescription = () => {
     return (
         <div className="service">
             {dataServiceDescription.map((el, i) => (
-                <div className={`service__wrap ${isEvenNumber(i) ? 'service__wrap--flex-direction' : ''}`} key={el.id} >
+                <div className={`service__wrap ${isEvenNumber(i) ? '' : 'service__wrap--flex-direction'}`} key={el.id} >
                     <div className="service__imagebox" >
                         <img src={el.image} alt={el.title} className="service__image" />
                         <div className="service__title"><h3 className="service__h3">{el.title}</h3></div>
