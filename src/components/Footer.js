@@ -25,9 +25,9 @@ const Footer = () => {
                                 <h4>FOLGE UNS</h4>
                                 {/* <p style={{ fontSize: '1.5rem', margin: '1rem 0' }}>FOLLOW US:</p> */}
                                 <div>
-                                    <a href="#" className='footer__link'><RiFacebookBoxFill className="footer__icon" /></a>
-                                    <a href="#" className='footer__link'><RiInstagramLine className="footer__icon" /></a>
-                                    <a href="#" className='footer__link'><RiLinkedinBoxFill className="footer__icon" /></a>
+                                    <a href="tel:017641552816" className='footer__link'><RiFacebookBoxFill className="footer__icon" /></a>
+                                    <a href="tel:017641552816" className='footer__link'><RiInstagramLine className="footer__icon" /></a>
+                                    <a href="tel:017641552816" className='footer__link'><RiLinkedinBoxFill className="footer__icon" /></a>
                                 </div>
                             </div>
                         </div>

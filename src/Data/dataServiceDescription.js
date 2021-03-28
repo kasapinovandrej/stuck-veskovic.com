@@ -33,7 +33,8 @@ const dataServiceDescription = [
         image: Image4,
         title: 'TROCKENBAU UND AKUSTIKDECKEN',
         descriptionTitle: 'Wir können Ihren Raum mit Trockenbautechnik nach Ihren Wünschen aufteilen. Fast sämtliche Anforderungen an den Brand-, Wärme-und Schallschutz kann man mit Trockenbau, sofern man diese nach den technischen Vorschriften einbaut, erfüllen',
-        descriptionText: 'In einfachster Weise sind Gewölbe, geschwungene Formen und mehrfach gekantete Verkofferungen mit dem modernen Trockenbau möglich. Akustikdecken kombinieren hohe Schall-Längsdämmung mit hohen Absorptionswerten und das bei den oft gewünschten glatten Oberflächen. Vor allem durch die differenzierten akustischen Eigenschaften werden die akustischen Anforderungen an unterschiedlichste Räume optimal erfüllt. Zudem sind Segeldecken ein besonderes Element, welches dem Raum ein schönes Erscheinungsbild ermöglichen. Auf Wunsch lassen sich in die Segeldecke eine LED-Beleuchtung einarbeiten.'
+        descriptionText: 'In einfachster Weise sind Gewölbe, geschwungene Formen und mehrfach DECKEN gekantete Verkofferungen mit dem modernen Trockenbau möglich. Akustikdecken kombinieren hohe Schall- Längsdämmung mit hohen Absorptionswerten und das bei den oft gewünschten glatten Oberflächen.Vor allem durch die differenzierten akustischen Eigenschaften werden die akustischen Anforderungen an unterschiedlichste Räume optimal erfüllt.',
+        descriptionText1: 'Zudem sind Segeldecken ein besonderes Element, welches dem Raum ein schönes Erscheinungsbild ermöglichen.Auf Wunsch lassen sich in die Segeldecke eine LED- Beleuchtung einarbeiten.',
     },
     {
         id: 5,
@@ -54,7 +55,8 @@ const dataServiceDescription = [
         image: Image7,
         title: 'VESKOVIC PERGOLA',
         descriptionTitle: 'VESKOVIC PERGOLA ist eine Pergola-Produktionsfirma, die gegründet wurde, um Lebensräume im Freien zu schaffen.',
-        descriptionText: 'Es bietet seinen Kunden erstklassige Lösungen für das Leben im Freien. Unsere faltbaren Pergola-Systeme bieten einen breiten und flexibilen Einsatz durch die Integration von Reißverschlussvorhängen, Glasscheibensystemen, LED-Beleuchtungen sowie Guillotine-Glassystemen. Eines der modernsten und praktischen Sonnen-und Niederschlagsschutzsystemen. Aufgrund seiner Eigenschaften und seines Prestige-Aussehen ist er eines der verbreiteten Schutzsysteme gegen äußere. Einflüsse in den Gärten von Restaurants und Cafes, sowie auf den Terrassen Ihrer Häuser geworden.'
+        descriptionText: 'Es bietet seinen Kunden erstklassige Lösungen für das Leben im Freien. Unsere faltbaren Pergola- Systeme bieten einen breiten und flexibilen Einsatz durch die Integration von Reißverschlussvorhängen, Glasscheibensystemen, LEDBeleuchtungen sowie Guillotine - Glassystemen.',
+        descriptionText1: 'Eines der modernsten und praktischen Sonnen-und Niederschlagsschutzsystemen.Aufgrund seiner Eigenschaften und seines Prestige- Aussehen ist er eines der verbreiteten Schutzsysteme gegen äußere Einflüsse in den Gärten von Restaurants und Cafes, sowie auf den Terrassen Ihrer Häuser geworden.',
     },
 ]
 

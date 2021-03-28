@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   &__wrap {
     position: relative;
     display: flex;
@@ -11,6 +10,7 @@
     align-items: center;
     width: 100%;
     margin: 3rem 0;
+
     &:not(:last-child)::after {
       position: absolute;
       text-align: center;
@@ -19,6 +19,12 @@
       bottom: -3rem;
       left: 20%;
       right: 20%;
+    }
+    &--flex-direction {
+      flex-direction: row-reverse;
+    }
+    @media only screen and (max-width: $medium) {
+      flex-direction: column;
     }
   }
   &__imagebox {
@@ -78,6 +84,10 @@
   }
   &__textbox {
     width: 50%;
+    @media only screen and (max-width: $medium) {
+      width: 80%;
+      margin: 3rem;
+    }
   }
   &__p {
     margin-top: 2rem;
