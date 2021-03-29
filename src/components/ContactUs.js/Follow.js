@@ -1,6 +1,5 @@
 import React from 'react'
 import { AiOutlinePhone, AiOutlineInstagram, AiFillFacebook } from 'react-icons/ai';
-import { ImFacebook2 } from 'react-icons/im';
 
 const Follow = () => {
     return (

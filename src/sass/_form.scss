@@ -3,8 +3,15 @@
   display: flex;
   width: 70%;
   margin-bottom: 10rem;
+  @media only screen and (max-width: $small) {
+    width: 90%;
+    margin-bottom: 5rem;
+  }
   &__image-box {
     width: 40%;
+    @media only screen and (max-width: $small) {
+      display: none;
+    }
   }
   &__image {
     width: 100%;
@@ -87,5 +94,13 @@
     font-weight: 500;
     cursor: pointer;
     border: none;
+    transition: background 0.5s;
+    outline: none;
+    &:hover {
+      background: $color4;
+    }
+    &:active {
+      transform: translateY(-2px);
+    }
   }
 }

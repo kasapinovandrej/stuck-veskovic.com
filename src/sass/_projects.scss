@@ -83,6 +83,10 @@
     width: 40rem;
     height: 40rem;
   }
+  @media only screen and (max-width: $small) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .multi {
@@ -103,6 +107,9 @@
     @media only screen and (max-width: $extra) {
       width: 40rem;
       height: 18rem;
+    }
+    @media only screen and (max-width: $small) {
+      width: 100%;
     }
   }
 }
