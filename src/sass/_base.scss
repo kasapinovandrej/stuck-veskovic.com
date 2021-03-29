@@ -3,6 +3,7 @@ $color2: #000;
 $color3: #ccc;
 $color4: #383e42;
 $color5: #828282ce;
+$color6: #6d757a;
 
 $extra-small: 21.9em;
 $small: 37.5em;
@@ -118,8 +119,8 @@ h5 {
   color: $color2;
   font-size: 2rem;
   @media only screen and (max-width: $medium) {
-      width: 100%;
-    }
+    width: 100%;
+  }
 }
 p {
   color: $color1;
