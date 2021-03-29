@@ -1,0 +1,91 @@
+.form {
+  background: $color4;
+  display: flex;
+  width: 70%;
+  margin-bottom: 10rem;
+  &__image-box {
+    width: 40%;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 10rem;
+  }
+  &__title {
+    position: relative;
+    color: $color1;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 10rem;
+    &::before {
+      position: absolute;
+      content: "";
+      border-bottom: 5px solid $color1;
+      bottom: -1rem;
+      left: 0;
+      width: 50%;
+    }
+  }
+  &__label {
+    color: $color1;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  &__input {
+    color: $color1;
+    font-size: 2rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $color5;
+    &:focus:invalid {
+      border-bottom: 2px solid red;
+    }
+    &:focus:valid {
+      border-bottom: 2px solid $color1;
+    }
+  }
+  &__message {
+    color: $color1;
+    font-size: 2rem;
+    font-family: inherit;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $color5;
+    &:focus:invalid {
+      border-bottom: 2px solid red;
+    }
+    &:focus:valid {
+      border-bottom: 2px solid $color1;
+    }
+  }
+  &__button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background: $color6;
+    color: $color1;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+  }
+}

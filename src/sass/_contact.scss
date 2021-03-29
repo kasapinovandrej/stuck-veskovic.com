@@ -78,3 +78,13 @@
     text-align: center;
   }
 }
+
+.big-icons {
+  font-size: 10rem;
+  color: $color6;
+  margin: 0 2rem;
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
