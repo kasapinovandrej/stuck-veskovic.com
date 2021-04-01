@@ -60,6 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     @media only screen and (max-width: $extra) {
       width: 60vw;
     }
@@ -86,22 +87,21 @@
       justify-content: center;
       margin-left: 0;
     }
-  }
-  &__listbox {
-    margin-top: 10rem;
     &:after {
       position: absolute;
       content: "";
       border-bottom: 1px solid rgba(204, 204, 204, 0.247);
       width: 60%;
-      bottom: 20%;
+      bottom: 0;
       left: 0;
       z-index: 20;
       @media only screen and (max-width: $small) {
         width: 100%;
-        bottom: 25%;
       }
     }
+  }
+  &__listbox {
+    margin-top: 10rem;
     @media only screen and (max-width: $small) {
       margin-top: 20rem;
     }
@@ -123,6 +123,14 @@
     transition: all 0.3s;
     &:hover {
       color: $color3;
+    }
+  }
+  &__footer {
+    background: rebeccapurple;
+    &-icons {
+      font-size: 5rem;
+      color: $color1;
+      margin: 1rem;
     }
   }
 }

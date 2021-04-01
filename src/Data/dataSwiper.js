@@ -8,14 +8,14 @@ const DataSwiper = [
     {
         id: 1,
         image: SwiperImageOne,
-        title: 'STUCK+FASSADEN',
-        text: 'Die Außenseite des Hauses wird nach Ihren Wünschen mit Stuck oder mit Putz verarbeitet.Das erste Erscheinungsbild eines Gebäudes ist am wichtigsten.'
+        title: 'STUCK + FASSADEN',
+        text: 'Die Außenseite des Hauses wird nach Ihren Wünschen mit Stuck oder mit Putz verarbeitet. Das erste Erscheinungsbild eines Gebäudes ist am wichtigsten.'
     },
     {
         id: 2,
         image: SwiperImageTwo,
         title: 'TROCKENBAU',
-        text: 'Wir können Ihren Raum mit Trockenbautechnik nach Ihren Wünschen aufteilen.Fast sämtliche Anforderungen an den Brand-, Wärme - und Schallschutz kann man mit Trockenbau, sofern man diese nach den technischen Vorschriften einbaut, erfüllen.'
+        text: 'Wir können Ihren Raum mit Trockenbautechnik nach Ihren Wünschen aufteilen. Fast sämtliche Anforderungen an den Brand -, Wärme - und Schallschutz kann man mit Trockenbau, sofern man diese nach den technischen Vorschriften einbaut, erfüllen.'
     },
     {
         id: 3,
