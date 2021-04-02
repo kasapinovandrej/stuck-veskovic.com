@@ -102,8 +102,15 @@
   }
   &__listbox {
     margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: $extra-large) {
+      margin-top: 5rem;
+    }
     @media only screen and (max-width: $small) {
       margin-top: 20rem;
+      height: 70%;
+      align-items: center;
     }
   }
   &__list {
@@ -112,6 +119,13 @@
     list-style: none;
     @media only screen and (max-width: $small) {
       transform: skewX(0);
+    }
+    &--child {
+      margin-top: 1rem;
+    }
+    transition: all 0.3s;
+    &:hover {
+      transform: skewX(-15deg) scale(1.1);
     }
   }
   &__link {
@@ -123,6 +137,19 @@
     transition: all 0.3s;
     &:hover {
       color: $color3;
+    }
+
+    &--child {
+      font-size: 1.5rem;
+      margin-left: 3rem;
+      line-height: 0rem;
+      text-transform: capitalize;
+      @media only screen and (max-width: $small) {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-left: 0;
+      }
     }
   }
   &__footer {

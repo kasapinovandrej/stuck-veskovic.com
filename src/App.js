@@ -10,6 +10,7 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 import Logo from './components/Logo';
 import ScrollToTop from './components/Elements/ScrollToTop';
 import { AnimatePresence } from 'framer-motion';
+import projects from '../src/Data/dataProjects';
 
 function App() {
   const location = useLocation();
@@ -21,10 +22,10 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
           <Route path='/leistungen' component={Services} />
-          <Route path='/projekte' component={Projekts} />
           <Route path='/über-uns' component={AboutUs} />
           <Route path='/kontakt' component={ContactUs} />
           <Route path='/' exact component={Home} />
+          {projects.map(project => <Route key={project.id} to={`/projekte${project.path}`} render={() => <Projekts data={project} />} />)}
         </Switch>
       </AnimatePresence>
       <Footer />
