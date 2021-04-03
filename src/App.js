@@ -14,6 +14,7 @@ import projects from '../src/Data/dataProjects';
 
 function App() {
   const location = useLocation();
+  console.log(projects[1].path);
   return (
     <div className="App">
       <Logo />
@@ -24,8 +25,8 @@ function App() {
           <Route path='/leistungen' component={Services} />
           <Route path='/über-uns' component={AboutUs} />
           <Route path='/kontakt' component={ContactUs} />
+          {projects.map(el => <Route path={`/projekte${el.path}`} key={el.id} render={() => <Projekts data={el} />} />)}
           <Route path='/' exact component={Home} />
-          {projects.map(project => <Route key={project.id} to={`/projekte${project.path}`} render={() => <Projekts data={project} />} />)}
         </Switch>
       </AnimatePresence>
       <Footer />

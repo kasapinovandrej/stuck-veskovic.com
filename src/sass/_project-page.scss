@@ -66,3 +66,12 @@
     }
   }
 }
+.paragraph-style {
+  background: $color4;
+  font-size: 2.9rem;
+  width: 80%;
+  margin-bottom: 10rem;
+  @media only screen and (max-width: $extra-large) {
+    width: 90%;
+  }
+}
