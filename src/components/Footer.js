@@ -34,7 +34,9 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <Copyright />
+            <Copyright
+                textClass='footer__rights'
+                linkClass='footer__rights--link' />
         </>
     )
 }

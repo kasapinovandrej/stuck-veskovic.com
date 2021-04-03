@@ -84,6 +84,9 @@
   color: $color6;
   margin: 0 2rem;
   transition: transform 0.3s;
+  @media only screen and (max-width: $medium) {
+    font-size: 5rem;
+  }
   &:hover {
     transform: scale(1.1);
   }

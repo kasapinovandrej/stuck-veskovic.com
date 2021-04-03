@@ -4,7 +4,7 @@ import { CgBackspace } from 'react-icons/cg'
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RiFacebookBoxFill, RiLinkedinBoxFill, RiInstagramLine, RiPhoneFill } from 'react-icons/ri';
-
+import Copyright from './Elements/Copyright';
 const backdropVar = {
     hidden: {
         opacity: 0
@@ -60,10 +60,19 @@ const Navigation = () => {
                                 </ul>
                             </div>
                             <div className="nav__footer">
-                                <a href="#" className="nav__footer-icons"><RiInstagramLine /></a>
-                                <a href="#" className="nav__footer-icons"><RiFacebookBoxFill /></a>
-                                <a href="#" className="nav__footer-icons"><RiLinkedinBoxFill /></a>
-                                <a href="#" className="nav__footer-icons"><RiPhoneFill /></a>
+                                <div className="nav__footer--linksbox">
+                                    <a href="#" className="nav__footer--icons"><RiInstagramLine /></a>
+                                    <a href="#" className="nav__footer--icons"><RiFacebookBoxFill /></a>
+                                    <a href="#" className="nav__footer--icons"><RiLinkedinBoxFill /></a>
+                                    <a href="#" className="nav__footer--icons"><RiPhoneFill /></a>
+                                </div>
+                                <span className="nav__footer--span">/</span>
+                                <div div className="nav__footer--textbox">
+                                    <Copyright
+                                        textClass="nav__footer--text"
+                                        linkClass="nav__footer--link" />
+                                </div>
+
                             </div>
                         </motion.div>
                     </nav>

@@ -87,18 +87,18 @@
       justify-content: center;
       margin-left: 0;
     }
-    &:after {
-      position: absolute;
-      content: "";
-      border-bottom: 1px solid rgba(204, 204, 204, 0.247);
-      width: 60%;
-      bottom: 0;
-      left: 0;
-      z-index: 20;
-      @media only screen and (max-width: $small) {
-        width: 100%;
-      }
-    }
+    // &:after {
+    //   position: absolute;
+    //   content: "";
+    //   border-bottom: 1px solid rgba(204, 204, 204, 0.247);
+    //   width: 60%;
+    //   bottom: 0;
+    //   left: 0;
+    //   z-index: 20;
+    //   @media only screen and (max-width: $small) {
+    //     width: 100%;
+    //   }
+    // }
   }
   &__listbox {
     margin-top: 10rem;
@@ -117,15 +117,18 @@
     margin-top: 2rem;
     transform: skewX(-15deg);
     list-style: none;
-    @media only screen and (max-width: $small) {
-      transform: skewX(0);
-    }
     &--child {
       margin-top: 1rem;
     }
     transition: all 0.3s;
     &:hover {
       transform: skewX(-15deg) scale(1.1);
+      @media only screen and (max-width: $small) {
+        transform: skewX(0) scale(1);
+      }
+    }
+    @media only screen and (max-width: $small) {
+      transform: skewX(0);
     }
   }
   &__link {
@@ -153,11 +156,41 @@
     }
   }
   &__footer {
-    background: rebeccapurple;
-    &-icons {
-      font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    margin: 5%;
+    &--linksbox {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--icons {
+      font-size: 3rem;
       color: $color1;
-      margin: 1rem;
+      margin: 1rem 1rem 0 0;
+    }
+    &--textbox {
+      width: 50%;
+    }
+    &--text {
+      font-size: 1.5rem;
+      color: $color5;
+    }
+    &--link {
+      text-decoration: none;
+      color: $color1;
+    }
+    &--span {
+      font-size: 4rem;
+      font-weight: 100;
+      color: $color1;
+      margin: 0 1rem;
     }
   }
 }
