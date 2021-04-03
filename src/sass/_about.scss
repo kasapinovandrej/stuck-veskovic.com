@@ -53,6 +53,36 @@
   &__map-wrap {
     width: 100rem;
   }
+  &__message {
+    width: 100%;
+    background-position: center;
+    color: $color1;
+    padding: 10rem 0;
+    margin: 5rem 0;
+    &--h5 {
+      color: $color1;
+      margin-left: 20%;
+      font-weight: 300;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    &--h3 {
+      margin-left: 20%;
+      font-size: 4rem;
+      color: $color1;
+      text-align: left;
+      margin-bottom: 4rem;
+    }
+    &--button {
+      margin-left: 20%;
+    }
+    &--title {
+      color: $color1;
+      font-weight: 100;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  }
 }
 
 .leaflet-container {

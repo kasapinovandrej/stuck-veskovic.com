@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const KontaktiereButton = (props) => {
 
     return (
-        <Link to='/kontakt'>
+        <Link to={props.path}>
             <motion.button
                 className={`btn ${props.btnClass}`}
                 whileHover={{ scale: 1.03, transition: { duration: .2 } }}
