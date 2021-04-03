@@ -2,7 +2,7 @@ import React from 'react';
 import MultiPictures from '../Elements/MultiPictures';
 import SinglePicture from '../Elements/SinglePicture';
 import Project1 from '../../assets/img/Projects/Project-1.jpg';
-import Project2 from '../../assets/img/Projects/Project-2.jpg';
+import Project2 from '../../assets/img/Projects/Project-2.png';
 import Project3 from '../../assets/img/Projects/Project-3.jpg';
 import Project5 from '../../assets/img/Projects/Project-5.jpg';
 import Project6 from '../../assets/img/Projects/Project-6.jpg';
@@ -16,24 +16,30 @@ const Projects = () => {
                 <div className="pro__box">
                     <div className="pro__upperbox">
                         <SinglePicture
-                            title='LAKE HOUSE, FRANKFURT AM MAIN / 2018'
+                            title='FASSADEN HAUSES'
                             img={Project1}
+                            link='/projekte/fassaden-hauses'
                         />
                         <MultiPictures
-                            titleOne='LAKE HOUSE, FRANKFURT AM MAIN / 2018'
-                            titleTwo='LAKE HOUSE, FRANKFURT AM MAIN / 2018'
+                            titleOne='AKUSTIKDECKEN'
+                            titleTwo='ZUSAMMENKLAPPBARES PERGOLA SYSTEM'
                             imgOne={Project2} imgTwo={Project3}
+                            linkOne='/projekte/akustikdecken'
+                            linkTwo='/projekte/zusammenklappbares-glassystem'
                         />
                     </div>
                     <div className="pro__upperbox">
                         <MultiPictures
-                            titleOne='LAKE HOUSE, FRANKFURT AM MAIN / 2018'
-                            titleTwo='LAKE HOUSE, FRANKFURT AM MAIN / 2018'
+                            titleOne='MODERNES BADEZIMMER'
+                            titleTwo='KERAMIKBODEN'
                             imgOne={Project5} imgTwo={Project6}
+                            linkOne='/projekte/modernes-badezimmer'
+                            linkTwo='/projekte/keramikboden'
                         />
                         <SinglePicture
-                            title='LAKE HOUSE, FRANKFURT AM MAIN / 2018'
+                            title='INNENRAUM DES HAUSES'
                             img={Project7}
+                            link='/projekte/innenraum-des-hauses'
                         />
                     </div>
                 </div>

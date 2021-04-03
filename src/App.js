@@ -14,7 +14,6 @@ import projects from '../src/Data/dataProjects';
 
 function App() {
   const location = useLocation();
-  console.log(projects[1].path);
   return (
     <div className="App">
       <Logo />
