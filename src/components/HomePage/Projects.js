@@ -2,11 +2,11 @@ import React from 'react';
 import MultiPictures from '../Elements/MultiPictures';
 import SinglePicture from '../Elements/SinglePicture';
 import Project1 from '../../assets/img/Projects/Project-1.jpg';
-import Project2 from '../../assets/img/Projects/Project-2.png';
+import Project2 from '../../assets/img/Projects/Project-2.jpg';
 import Project3 from '../../assets/img/Projects/Project-3.jpg';
+import Project4 from '../../assets/img/Projects/Project-4.jpg';
 import Project5 from '../../assets/img/Projects/Project-5.jpg';
 import Project6 from '../../assets/img/Projects/Project-6.jpg';
-import Project7 from '../../assets/img/Projects/Project-7.jpg';
 
 const Projects = () => {
     return (
@@ -32,13 +32,13 @@ const Projects = () => {
                         <MultiPictures
                             titleOne='MODERNES BADEZIMMER'
                             titleTwo='KERAMIKBODEN'
-                            imgOne={Project5} imgTwo={Project6}
+                            imgOne={Project4} imgTwo={Project5}
                             linkOne='/projekte/modernes-badezimmer'
                             linkTwo='/projekte/keramikboden'
                         />
                         <SinglePicture
                             title='INNENRAUM DES HAUSES'
-                            img={Project7}
+                            img={Project6}
                             link='/projekte/innenraum-des-hauses'
                         />
                     </div>

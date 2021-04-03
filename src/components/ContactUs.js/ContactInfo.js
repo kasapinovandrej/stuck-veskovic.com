@@ -2,15 +2,17 @@ import React from 'react'
 import Info from '../../assets/img/ContactUs/contact-information.png';
 import Man from '../../assets/img/ContactUs/contact-us.png';
 import Location from '../../assets/img/ContactUs/location-contact-us.png';
+import KontaktiereButton from '../Elements/KontaktiereButton';
 
-const ContactInfo = () => {
+const ContactInfo = (props) => {
     return (
         <div className="wrap">
             <div className='contact__title-box'>
                 <h3 className='contact__title' >Sei frei und kontaktiere uns!</h3>
-                <div className='contact__absolute-box'>
-                    <h3 className="contact__absolute-title">kontaktiere uns</h3>
-                </div>
+                <KontaktiereButton
+                    btnClass='contact__absolute--box'
+                    textClass='contact__absolute--title'
+                    scrollFunction={props.scrollFunction} />
                 <img src={Man} alt="Man" className='contact__absolute-image' />
             </div>
             <div className='contact__info-box'>

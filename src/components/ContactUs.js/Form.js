@@ -2,7 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import Image from '../../assets/img/ContactUs/top-view-person-writing-laptop-with-copy-space.png';
 
-const Form = () => {
+const Form = (props, ref) => {
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_pslsa7e', 'template_7ila39t', e.target, 'user_Jbnf8X3GB50eRzOKuwj0H')
@@ -14,7 +14,7 @@ const Form = () => {
         e.target.reset()
     }
     return (
-        <div className="wrap">
+        <div className="wrap" ref={ref}>
             <div className="form">
                 <div className="form__image-box">
                     <img src={Image} alt="laptop" className="form__image" />
@@ -36,4 +36,4 @@ const Form = () => {
     )
 }
 
-export default Form
+export default React.forwardRef(Form)
