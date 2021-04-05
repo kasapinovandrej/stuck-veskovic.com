@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../assets/img/logo/Logo-beli.png';
 import { RiFacebookBoxFill, RiLinkedinBoxFill, RiInstagramLine } from 'react-icons/ri';
 import Copyright from './Elements/Copyright';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <footer className="footer">
                 <div className='footer__wrap'>
                     <div className='footer__box'>
-                        <img src={Logo} alt="Logo" className='footer__logo' />
+                        <Link to="/"><img src={Logo} alt="Logo" className='footer__logo' /></Link>
                     </div>
                     <div className='footer__textwrap'>
                         <div className="footer__box">
@@ -23,7 +24,6 @@ const Footer = () => {
                         <div className="footer__box">
                             <div className="footer__textbox">
                                 <h4>FOLGE UNS</h4>
-                                {/* <p style={{ fontSize: '1.5rem', margin: '1rem 0' }}>FOLLOW US:</p> */}
                                 <div>
                                     <a href="tel:017641552816" className='footer__link'><RiFacebookBoxFill className="footer__icon" /></a>
                                     <a href="tel:017641552816" className='footer__link'><RiInstagramLine className="footer__icon" /></a>
