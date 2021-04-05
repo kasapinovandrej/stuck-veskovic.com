@@ -5,7 +5,10 @@ const GridGallery = (props) => {
         <div className='wrap'>
             <div className="grid">
                 {props.images.map((image, i) =>
-                    <div key={image} className={`grid__imagebox grid__imagebox--${i + 1}`} style={{ backgroundImage: `url(${image})` }}>
+                    <div onClick={props.showHideModal} key={image} className={`grid__imagebox grid__imagebox--${i + 1}`}
+                    // style={{ backgroundImage: `url(${image})` }}
+                    >
+                        <img src={image} alt={i} className="grid__images" />
                     </div>)}
             </div>
         </div>

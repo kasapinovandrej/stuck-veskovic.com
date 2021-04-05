@@ -24,8 +24,6 @@
   }
   &__imagebox {
     overflow: hidden;
-    background-position: center;
-    background-size: cover;
     cursor: pointer;
     filter: brightness(80%);
     transition: all 0.5s;
@@ -46,8 +44,8 @@
         grid-row: inherit;
       }
     }
-    &--2 {
-    }
+    // &--2 {
+    // }
     &--3 {
       grid-column: 4/6;
       @media only screen and (max-width: $small) {
@@ -62,8 +60,13 @@
         grid-row: inherit;
       }
     }
-    &--5 {
-    }
+    // &--5 {
+    // }
+  }
+  &__images {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 .paragraph-style {
