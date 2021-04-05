@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Image from '../../assets/img/ContactUs/top-view-person-writing-laptop-with-copy-space.png';
+import ErrorSuccessMsg from '../Elements/ErrorSuccessMsg';
 
 const Form = (props, ref) => {
+    const [msgSent, setMsgSent] = useState(false)
+    const [msgSentError, setMsgSentError] = useState(false)
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_pslsa7e', 'template_7ila39t', e.target, 'user_Jbnf8X3GB50eRzOKuwj0H')
             .then((result) => {
-                console.log(result.text);
+                setMsgSent(true)
+                setTimeout(() => {
+                    setMsgSent(false)
+                }, 4000)
             }, (error) => {
-                console.log(error.text);
+                setMsgSentError(true)
+                setTimeout(() => {
+                    setMsgSentError(false)
+                }, 4000)
             });
         e.target.reset()
     }
@@ -30,6 +39,7 @@ const Form = (props, ref) => {
                         <textarea name="message" className="form__message" required />
                         <input className="form__button" type="submit" value="SENDEN" />
                     </div>
+                    <ErrorSuccessMsg send={msgSent} error={msgSentError} />
                 </form>
             </div>
         </div>
