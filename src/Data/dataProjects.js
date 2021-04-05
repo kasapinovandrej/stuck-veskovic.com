@@ -6,9 +6,9 @@ import fassaden5 from '../assets/img/PageProjects/fassaden-hauses/fassaden5.jpg'
 import fassadenBackground from '../assets/img/PageProjects/fassaden-hauses/fassaden-backgrpund.jpg';
 ////////////////////////////////////////////////////////////
 import akustikdecken1 from '../assets/img/PageProjects/Akustikdecken/Akustikdecken1.jpg';
-import akustikdecken2 from '../assets/img/PageProjects/Akustikdecken/akustikdecken2.png';
-import akustikdecken3 from '../assets/img/PageProjects/Akustikdecken/akustikdecken3.jpeg';
-import akustikdecken4 from '../assets/img/PageProjects/Akustikdecken/akustikdecken4.jpeg';
+import akustikdecken2 from '../assets/img/PageProjects/Akustikdecken/akustikdecken2.jpg';
+import akustikdecken3 from '../assets/img/PageProjects/Akustikdecken/akustikdecken3.jpg';
+import akustikdecken4 from '../assets/img/PageProjects/Akustikdecken/akustikdecken4.jpg';
 import akustikdecken5 from '../assets/img/PageProjects/Akustikdecken/akustikdecken5.jpg';
 import akustikdeckenBackground from '../assets/img/PageProjects/Akustikdecken/Akustikdecken.jpg';
 ////////////////////////////////////////////////////////////
@@ -16,7 +16,7 @@ import glassystem from '../assets/img/PageProjects/glassystem/glassystem.jpg';
 import glassystem1 from '../assets/img/PageProjects/glassystem/1.jpg';
 import glassystem2 from '../assets/img/PageProjects/glassystem/2.jpg';
 import glassystem3 from '../assets/img/PageProjects/glassystem/3.jpg';
-import glassystem4 from '../assets/img/PageProjects/glassystem/4.png';
+import glassystem4 from '../assets/img/PageProjects/glassystem/4.jpg';
 import glassystem5 from '../assets/img/PageProjects/glassystem/5.jpg';
 ////////////////////////////////////////////////////////////
 import badezimmerImg from '../assets/img/PageProjects/badezimmer/badzimmer.jpg';
@@ -29,7 +29,7 @@ import badezimmer5 from '../assets/img/PageProjects/badezimmer/5.jpg';
 import keramikbodenImg from '../assets/img/PageProjects/keramikboden/Keramikboden.jpg';
 import keramikboden1 from '../assets/img/PageProjects/keramikboden/1.jpg';
 import keramikboden2 from '../assets/img/PageProjects/keramikboden/2.jpg';
-import keramikboden3 from '../assets/img/PageProjects/keramikboden/3.jpeg';
+import keramikboden3 from '../assets/img/PageProjects/keramikboden/3.jpg';
 import keramikboden4 from '../assets/img/PageProjects/keramikboden/4.jpg';
 import keramikboden5 from '../assets/img/PageProjects/keramikboden/5.jpeg';
 /////////////////////////////////////////////////////////////
@@ -41,11 +41,11 @@ import innenraum4 from '../assets/img/PageProjects/innenraum/4.jpg'
 import innenraum5 from '../assets/img/PageProjects/innenraum/5.jpg'
 /////////////////////small project images///////////////////
 import fassaden from '../assets/img/PageProjects/small-project-images/FASSADEN.jpg';
-import akustikdecken from '../assets/img/PageProjects/small-project-images/AKUSTIKDECKEN.png';
-import innenraum from '../assets/img/PageProjects/small-project-images/INNENRAUM-DES-HAUSES.png';
-import keramikboden from '../assets/img/PageProjects/small-project-images/KERAMIKBODEN.png';
-import badezimmer from '../assets/img/PageProjects/small-project-images/MODERNES-BADEZIMMER.png';
-import pergola from '../assets/img/PageProjects/small-project-images/ZUSAMMENKLAPPBARES-GLASSYSTEM.png';
+import akustikdecken from '../assets/img/PageProjects/small-project-images/AKUSTIKDECKEN.jpg';
+import innenraum from '../assets/img/PageProjects/small-project-images/INNENRAUM-DES-HAUSES.jpg';
+import keramikboden from '../assets/img/PageProjects/small-project-images/KERAMIKBODEN.jpg';
+import badezimmer from '../assets/img/PageProjects/small-project-images/MODERNES-BADEZIMMER.jpg';
+import pergola from '../assets/img/PageProjects/small-project-images/ZUSAMMENKLAPPBARES-GLASSYSTEM.jpg';
 
 const fassadenCard = {
     path: '/fassaden-hauses',
