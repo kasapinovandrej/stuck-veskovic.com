@@ -5,12 +5,12 @@ import Services from '../components/HomePage/Services';
 import Clients from '../components/HomePage/Clients';
 
 
-const Home = () => {
+const Home = (props) => {
     return (
         <div className="home">
             <Swiper />
             <Projects />
-            <Services />
+            <Services func={props.func} />
             <Clients />
         </div>
     )

@@ -12,7 +12,7 @@ const ContactInfo = (props) => {
                 <KontaktiereButton
                     btnClass='contact__absolute--box'
                     textClass='contact__absolute--title'
-                    scrollFunction={props.scrollFunction} />
+                    btnFunction={props.scrollFunction} />
                 <img src={Man} alt="Man" className='contact__absolute-image' />
             </div>
             <div className='contact__info-box'>

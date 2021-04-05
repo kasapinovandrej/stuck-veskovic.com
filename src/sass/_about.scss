@@ -45,7 +45,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
-    
   }
   &__owner-name {
     text-transform: capitalize;
@@ -64,7 +63,8 @@
   }
   &__message {
     width: 100%;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: $color1;
     padding: 10rem 0;
     margin: 5rem 0;
@@ -92,8 +92,8 @@
         font-size: 3rem;
       }
     }
-    &--button {
-    }
+    // &--button {
+    // }
     &--title {
       color: $color1;
       font-weight: 100;
