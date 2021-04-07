@@ -17,7 +17,6 @@ const ServiceDescription = (props) => {
                     </div>
                     <div className="service__textbox">
                         <h5>{el.descriptionTitle}</h5>
-                        {/* <p className="service__p">{el.descriptionText}</p> */}
                         <p className="service__p">{el.descriptionText}</p>
                         <p className="service__p">{el.descriptionText1}</p>
                         <p className="service__p">{el.descriptionText2}</p>

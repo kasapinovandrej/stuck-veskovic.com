@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import LogoImage from '../assets/img/logo/Logo-beli.png'
+import LogoImage from '../assets/img/logo/logo.png'
 
 const Logo = () => <Link to='/'><img src={LogoImage} alt="Logo" className='home__logo' /></Link>
 
