@@ -1,5 +1,5 @@
 import SerImage1 from '../assets/img/Services/Usluga-4-FASADE.jpg';
-import SerImage2 from '../assets/img/Services/Fliesenarbeiten 1.jpg';
+import SerImage2 from '../assets/img/Services/Fliesenarbeiten.jpg';
 import SerImage3 from '../assets/img/Services/Innenarum-des-hauses.jpg';
 import SerImage4 from '../assets/img/Services/Restauraten.jpg';
 import SerImage5 from '../assets/img/Services/Trockenbau-und-akustikdecken.jpg';
