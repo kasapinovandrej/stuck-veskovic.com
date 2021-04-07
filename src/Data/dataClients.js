@@ -1,5 +1,5 @@
 import Client1 from '../assets/img/Clients/grohn-logo.png';
-import Client2 from '../assets/img/Clients/knauf-logo.png';
+import Client2 from '../assets/img/Clients/knauflogo.png';
 import Client3 from '../assets/img/Clients/pci-logo.png';
 import Client4 from '../assets/img/Clients/pergola-logo.png';
 import Client5 from '../assets/img/Clients/texo-logo.png';
