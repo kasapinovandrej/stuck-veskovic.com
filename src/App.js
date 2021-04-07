@@ -21,12 +21,17 @@ function App() {
   revealRefs.current = []
 
   const addToRefs = (el) => {
-    if (el && !revealRefs.current.includes(el)) {
-      revealRefs.current.push(el)
-    }
-    if (!revealRefs.current[cardNumber - 1]) return
-    revealRefs.current[cardNumber - 1].scrollIntoView({ behavior: 'smooth' })
+    setTimeout(() => {
+      if (el && !revealRefs.current.includes(el)) {
+        revealRefs.current.push(el)
+      }
+      if (!revealRefs.current[cardNumber - 1]) return
+      revealRefs.current[cardNumber - 1].scrollIntoView({
+        behavior: "smooth",
+      });
+    }, 0)
   }
+
   const toAboutUsScroll = (e) => {
     setCardNumber(e.target.alt)
     history.push('/leistungen')
