@@ -59,10 +59,10 @@ const Navigation = () => {
                             </div>
                             <div className="nav__footer">
                                 <div className="nav__footer--linksbox">
-                                    <a href="tel:017641552816" className="nav__footer--icons"><RiInstagramLine /></a>
-                                    <a href="tel:017641552816" className="nav__footer--icons"><RiFacebookBoxFill /></a>
-                                    <a href="tel:017641552816" className="nav__footer--icons"><RiLinkedinBoxFill /></a>
-                                    <a href="tel:017641552816" className="nav__footer--icons"><RiPhoneFill /></a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/veskovicpergola" className="nav__footer--icons"><RiInstagramLine /></a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100014241640083" className="nav__footer--icons"><RiFacebookBoxFill /></a>
+                                    {/* <a target="_blank" rel="noreferrer" href="#" className="nav__footer--icons"><RiLinkedinBoxFill /></a> */}
+                                    <a href="tel:004917641552816" className="nav__footer--icons"><RiPhoneFill /></a>
                                 </div>
                                 <span className="nav__footer--span">/</span>
                                 <div div className="nav__footer--textbox">

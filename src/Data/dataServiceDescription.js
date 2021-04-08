@@ -46,21 +46,21 @@ const dataServiceDescription = [
         descriptionText1: 'Eines der modernsten und praktischen Sonnen-und Niederschlagsschutzsystemen.Aufgrund seiner Eigenschaften und seines Prestige- Aussehen ist er eines der verbreiteten Schutzsysteme gegen äußere Einflüsse in den Gärten von Restaurants und Cafes, sowie auf den Terrassen Ihrer Häuser geworden.',
     },
     {
-        id: 8,
-        image: Image8,
-        title: 'POOL BAU',
-        descriptionTitle: 'Das Unternehmen, das sich mit dem Verkauf und Bau verschiedener Gebäude, der Verbesserung und Weiterentwicklung der Technologie befasst, konzentrierte sich zunehmend auf Schwimmbäder und Poolausrüstung.',
-        descriptionText: 'Wenn Sie nicht feststellen können, welche Art von Pool Sie benötigen, bieten wir Ihnen umfassende Beratungsunterstützung und helfen Ihnen bei der Auswahl der besten Option. Bei der Arbeit halten wir uns strikt an die Anforderungen des Kunden und die in dieser Branche geltenden Qualitätsstandards. Mit den Diensten von «Stuck Veskovic» erzielen Sie mit Sicherheit ein hohes Leistungsniveau.'
-    },
-    {
-        id: 6,
+        id: 7,
         image: Image5,
         title: 'INNENRAUM DES HAUSES',
         descriptionTitle: 'Unsere Innenarchitekten arbeiten hart daran, schöne Räume zu schaffen.',
         descriptionText: 'Gestaltung aller Arten von Innenräumen für Ihre Wohnung, Ihr Haus, Ihre Wohnung, Ihren Geschäftsraum. 3D-Modelle für jeden Raum, Möbelmodellierung, Visualisierung und Renderings.'
     },
     {
-        id: 7,
+        id: 6,
+        image: Image8,
+        title: 'POOL BAU',
+        descriptionTitle: 'Das Unternehmen, das sich mit dem Verkauf und Bau verschiedener Gebäude, der Verbesserung und Weiterentwicklung der Technologie befasst, konzentrierte sich zunehmend auf Schwimmbäder und Poolausrüstung.',
+        descriptionText: 'Wenn Sie nicht feststellen können, welche Art von Pool Sie benötigen, bieten wir Ihnen umfassende Beratungsunterstützung und helfen Ihnen bei der Auswahl der besten Option. Bei der Arbeit halten wir uns strikt an die Anforderungen des Kunden und die in dieser Branche geltenden Qualitätsstandards. Mit den Diensten von «Stuck Veskovic» erzielen Sie mit Sicherheit ein hohes Leistungsniveau.'
+    },
+    {
+        id: 8,
         image: Image6,
         title: 'LANDSCHAFTS UND GARTEN DESIGN',
         descriptionTitle: 'Möchten Sie, dass Ihr Zuhause eine friedliche Oase bekommt, die einfach zu genießen und zu entspannen ist?',
