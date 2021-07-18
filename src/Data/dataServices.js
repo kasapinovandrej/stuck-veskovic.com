@@ -13,12 +13,12 @@ const DataServices = [
     },
     {
         id: 2,
-        title: 'TEROCKENBAU UND AKUSTIKDECKEN',
+        title: 'TROCKENBAU UND AKUSTIKDECKEN',
         image: SerImage5
     },
     {
         id: 3,
-        title: 'RESTAURATEN',
+        title: 'RESTAURATOREN',
         image: SerImage4
     },
     {
@@ -33,7 +33,7 @@ const DataServices = [
     },
     {
         id: 6,
-        title: 'INNENARUM DES HAUSES',
+        title: 'INNENRAUM DES HAUSES',
         image: SerImage3
     },
 ]

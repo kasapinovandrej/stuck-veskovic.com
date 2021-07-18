@@ -1,6 +1,10 @@
 import React from 'react'
 import Logo from '../assets/img/logo/logo.png';
-import { RiFacebookBoxFill, RiLinkedinBoxFill, RiInstagramLine } from 'react-icons/ri';
+import {
+    RiFacebookBoxFill,
+    // RiLinkedinBoxFill, 
+    RiInstagramLine
+} from 'react-icons/ri';
 import Copyright from './Elements/Copyright';
 import { Link } from 'react-router-dom';
 

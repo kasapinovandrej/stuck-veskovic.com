@@ -4,6 +4,8 @@ import Client3 from '../assets/img/Clients/pci-logo.png';
 import Client4 from '../assets/img/Clients/pergola-logo.png';
 import Client5 from '../assets/img/Clients/texo-logo.png';
 import Client6 from '../assets/img/Clients/wedi-logo.png';
+import Client7 from '../assets/img/Clients/Brillux.png';
+import Client8 from '../assets/img/Clients/isoplam.png';
 
 
 const DataClients = [
@@ -30,6 +32,14 @@ const DataClients = [
     {
         id: 6,
         image: Client6
+    },
+    {
+        id: 7,
+        image: Client7
+    },
+    {
+        id: 8,
+        image: Client8
     },
 
 ]

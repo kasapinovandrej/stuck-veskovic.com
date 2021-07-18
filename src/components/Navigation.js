@@ -3,7 +3,11 @@ import { IoMenuOutline } from 'react-icons/io5'
 import { CgBackspace } from 'react-icons/cg'
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { RiFacebookBoxFill, RiLinkedinBoxFill, RiInstagramLine, RiPhoneFill } from 'react-icons/ri';
+import {
+    RiFacebookBoxFill,
+    // RiLinkedinBoxFill, 
+    RiInstagramLine, RiPhoneFill
+} from 'react-icons/ri';
 import Copyright from './Elements/Copyright';
 const backdropVar = {
     hidden: {
@@ -23,7 +27,7 @@ const Navigation = () => {
         setList(!list)
     }
     return (
-        <div>
+        <>
             {menu ? <button className='menu-btn' onClick={toggleNav}><CgBackspace className='menu-btn__icon' /></button> : <button className='burger-btn' onClick={toggleNav}><IoMenuOutline className='burger-btn__icon' /></button>}
             <AnimatePresence exitBeforeEnter>
                 {menu ?
@@ -52,6 +56,8 @@ const Navigation = () => {
                                         <li className="nav__list nav__list--child" onClick={toggleNav}><NavLink className=' nav__link nav__link--child' to='/projekte/modernes-badezimmer'>Modernes Badezimmer</NavLink></li>
                                         <li className="nav__list nav__list--child" onClick={toggleNav}><NavLink className=' nav__link nav__link--child' to='/projekte/keramikboden'>Keramikboden</NavLink></li>
                                         <li className="nav__list nav__list--child" onClick={toggleNav}><NavLink className=' nav__link nav__link--child' to='/projekte/innenraum-des-hauses'>Innenraum Des Hauses</NavLink></li>
+                                        <li className="nav__list nav__list--child" onClick={toggleNav}><NavLink className=' nav__link nav__link--child' to='/projekte/poolbau'>Poolbau</NavLink></li>
+                                        <li className="nav__list nav__list--child" onClick={toggleNav}><NavLink className=' nav__link nav__link--child' to='/projekte/Wochenend-haus'>Wochenendhaus</NavLink></li>
                                     </ul>
                                     <li className='nav__list' onClick={toggleNav}><NavLink to='/über-uns' className='nav__link'>ÜBER UNS</NavLink></li>
                                     <li className='nav__list' onClick={toggleNav}><NavLink to='/kontakt' className='nav__link'>KONTAKT</NavLink></li>
@@ -75,7 +81,7 @@ const Navigation = () => {
                         </motion.div>
                     </nav> : null}
             </AnimatePresence>
-        </div>
+        </>
     )
 }
 
