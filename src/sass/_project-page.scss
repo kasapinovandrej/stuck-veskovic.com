@@ -69,6 +69,25 @@
     height: 100%;
   }
 }
+.flex {
+  &__imagebox {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 10rem 0;
+    justify-content: center;
+  }
+  &__images__box {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+  &__images {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
 .paragraph-style {
   background: $color4;
   font-size: 2.9rem;
